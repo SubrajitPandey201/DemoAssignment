@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Demo Assignment</string>
+    <string name="search">Customer Name/Mobile/Account No</string>
+    <string name="customer_list">Customer List</string>
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="3dp"
+    android:background="@drawable/rounded_edittext">
+
+    <ImageView
+        android:id="@+id/animalImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="5dp"/>
+
+    <!-- Vertical line -->
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/darker_gray"
+        android:layout_marginEnd="20dp"/> <!-- Adjust marginEnd as needed -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/customerName"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp"> <!-- Adjust margin as needed -->
+
+            <TextView
+                android:id="@+id/mobileNumber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="11sp"
+                android:layout_marginEnd="8dp" /> <!-- Adjust marginEnd as needed -->
+
+            <!-- Call icon -->
+            <ImageView
+                android:id="@+id/callIcon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:backgroundTint="@color/black"
+                android:src="@android:drawable/ic_menu_call" /> <!-- Replace with your call icon drawable -->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
